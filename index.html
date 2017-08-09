@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>知问前端</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/jquery-ui.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+	
+	
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquery-ui.js"></script>
+	<script type="text/javascript" src="js/jquery-validate.js"></script>
+	<script type="text/javascript" src="js/jquery-form.js"></script>
+	<script type="text/javascript" src="js/jquery-cookie.js"></script>
+	<script type="text/javascript" src="js/ueditor.config.js"></script> 
+    <script type="text/javascript" src="js/ueditor.all.js"></script>
+	
+	
+	<script type="text/javascript" src="js/index.js"></script>
+
+</head>
+<body>
+	<div id="header">
+		<div class="header_main">
+			<h1>知问</h1>
+			<div class="header_search">
+				<input type="text" class="search" />
+				<input type="button" value="搜索" class="search_button" />
+				<input type="button" value="提问" class="question_button" />
+			</div>
+			
+			<div class="header_link">
+				<a href="javascript:void(0)" id="reg_a">注册</a>
+				<a href="javascript:void(0)" id="reg_user">用户</a>
+				|
+				<a href="#" id="login_a">登陆</a>
+				<a href="#" id="logout">退出</a>
+
+			</div>
+		</div>
+	</div>
+	<div id="main">
+		<div class="main_left">
+			<div id="tabs">
+				  <ul>
+				    <li><a href="#fragment-1">热门</a></li>
+				    <li><a href="#fragment-2">话题</a></li>
+				    <li><a href="#fragment-3">精华</a></li>
+				  </ul>
+				  <div id="fragment-1">
+				  	1、地震后收到的第一条微信，我永远舍不得删除</br>
+				  	2、你还年轻，别堕落成性</br>
+				  	3、在这个浮躁的社会，你有能力独处吗？</br>
+				  </div>
+				  <div id="fragment-2">
+					1、就 3 点，提升工作效率</br>
+					2、以程序员的视角看为什么骑车忘锁会变成欠两千万</br>
+					3、CSS实现动态百分比圆环</br>
+				  </div>
+				  <div id="fragment-3">
+				    1、吴京，他只是个故事，不是伟哥</br>
+				    2、前端框架那么多，你该做何选择？</br>
+				    3、如何做到高度自律？</br>
+				  </div>
+			</div>
+			<div id="content">
+				
+			</div>
+		</div>
+		<div class="main_right">
+			<div id="accordion">
+			  <h3>新上榜</h3>
+			  <div>1、嫌疑人X的献身</br>
+				    2、雪国列车</br>
+				    3、圣女的救济</br>
+			  </div>
+			  <h3>7日热门</h3>
+			  <div>1、一个人的朝圣</br>
+				   2、霍乱时期的爱情岛</br>
+				   3、了凡四训</br>
+			  </div>
+			  <h3>30日热门</h3>
+			  <div>1、白夜行</br>
+				    2、湖畔</br>
+				    3、解忧杂货店</br>
+			  </div>
+			</div>
+		</div>
+	</div>
+	
+	
+
+
+
+	<form id="reg" title="会员注册">
+		<ol class="reg_error"></ol>
+		<p>
+			<label for="user">账号：</label>
+			<input type="text" name="user" class="text" id="user" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="password">密码：</label>
+			<input type="password" name="password" class="text" id="password" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="email">邮箱：</label>
+			<input type="text" name="email" class="text" id="email" />
+			<span class="star">*</span>
+		</p>
+		<p>
+			<label for="sex">性别：</label>
+			<input type="radio" name="sex" value="male" checked="true" /><label for="male">男</label><input type="radio" name="sex" value="female"/><label for="female">女</label>
+		</p>
+		<p>
+			<label for="birth">生日：</label>
+			<input type="text" name="birth" class="text" readonly="readonly" id="birth" />
+		</p>
+	</form>
+	<form id="login" title="会员登陆">
+		<ol class="log_error"></ol>
+		<p>
+			<label for="log_user">账号：</label>
+			<input type="text" name="log_user" class="text" id="log_user" />
+			
+		</p>
+		<p>
+			<label for="log_password">密码：</label>
+			<input type="password" name="log_password" class="text" id="log_password" />
+			
+		</p>
+		<p>
+			<input type="checkbox" name="" checked="checked" id="expire" /><label>登陆有效期一周</label>
+		</p>
+	</form>
+	<form id="question" title="提问">
+		<p>
+			<label for="question">提问名称</label>
+			<input type="text" name="title" class="text" id="title" style="width: 380px;" />
+		</p>
+		<p>
+			<textarea id="textarea" name="content">请输入内容...</textarea>
+		</p>
+	</form>
+	<div id="loading">数据交互中...</div>
+	<div id="error">请登陆！</div>
+	
+</body>
+</html>

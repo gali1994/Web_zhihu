@@ -1,0 +1,229 @@
+body {	
+	margin: 40px 0 0 0;
+	padding: 0;
+	font-size: 12px;
+	font-family: "微软雅黑",arial;
+	background: #fff;
+}
+a {
+	text-decoration: none;
+}
+li {
+	list-style: none;
+}
+#header {
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 40px;
+	background: url(../img/header_bg.png);
+}
+.header_main {	
+	width: 960px;
+	height: 40px;
+	margin:0 auto;
+}
+.header_main h1 {
+	float: left;
+	height: 40px;
+	line-height: 40px;	
+	color: #666;
+	font-size: 20px;
+	margin: 0;
+	padding: 0;
+}
+.header_search .search {
+	float: left;
+	width: 300px;
+	height: 24px;
+	margin: 6px;
+	text-indent: 6px;
+	background: #fff;
+	font-size: 14px;
+
+}
+.header_search .search_button, .header_search .question_button{
+	float: left;
+	margin: 7px 2px;
+}
+.header_link {
+	float: right;
+	height: 40px;
+	line-height: 40px;
+}
+.header_link a {
+	margin:0 3px;
+	color: #666;
+	font-size: 14px;
+}
+#reg {
+
+}
+#reg .succ{
+	display: inline-block;
+	width: 20px;
+	background:url(../img/sucess.png) no-repeat;
+}
+#reg ol,#login ol,#question ol{
+	padding: 0;
+	margin:0 0 0 10px;
+}
+#reg ol li,#login ol li,#question ol li{
+	height: 20px;
+	line-height: 20px;
+	
+}
+#reg ol li label,#login ol li label,#question ol li label {
+	color: maroon;
+}
+#reg p,#login p,#question p {
+	padding: 0;
+	margin: 10px;
+}
+#reg label,#login label,#question label {
+	color: #666;
+	font-size: 13px;
+}
+#reg .star{
+	font-size: 16px;
+	color: maroon;
+}
+#reg .text,#login .text,#question .text {
+	border-radius: 4px;
+	border: 1px solid #ccc;
+	background: #fff;
+	width: 200px;
+	height: 25px;
+	line-height: 25px;
+	text-indent: 5px;
+	color: #666;
+	font-size: 13px;
+}
+.ui-tooltip {
+	color: #666;
+	font-size: 12px;
+}
+.ui-menu .ui-menu-item {
+	color: #666;
+}
+
+
+.ui-tabs .ui-tabs-nav {
+	/*background: url(../img/header_bg.png)no-repeat;*/
+	background: none;
+}
+#main{
+	width: 960px;
+	margin:0 auto;
+	padding: 10px 0 0 0;
+}
+#main .main_left{
+	float: left;
+	width: 680px;
+}
+#main .main_right{
+	float: right;
+	width: 260px;
+}
+#accordion{
+	width: 260px;
+}
+#tabs {
+	width: 680px;	
+}
+#content h4{
+	color: #369;
+	font-size: 12px;
+	font-weight: normal;
+}
+#content h3{
+	color: #666;
+	font-size: 16px;
+
+}
+#content .editor{
+	font-size: 14px;
+	color: #666;
+}
+#content .bottom{
+	padding-top: 10px;
+	font-size: 12px;
+	color: #333;
+}
+
+#content .down{
+	font-weight: normal;
+	color: #369;
+	font-size: 12px;
+	cursor: pointer;
+}
+#content .up{
+	float: right;	
+	color: #369;
+	font-size: 12px;
+	cursor: pointer;
+}
+
+#content hr{
+	height: 1px;
+	color: #eee;
+
+}
+#content .comment{
+	color: #369;
+	font-size: 12px;
+	cursor: pointer;
+}
+#content .comment_list{	
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px 10px;
+	display: none;
+}
+#content .comment_list .comment_content{
+	margin: 0;
+	padding: 3px 0 5px 0;
+	
+}
+#content .comment_list .comment_date{
+	
+	border-bottom: 1px solid #ccc;
+}
+#content .comment_list dl dt{
+	margin: 0;
+	padding: 5px 0 0 0;
+	color: #369;
+}
+#content .comment_list dl dd{
+	margin: 0;
+	padding: 0;
+	color: #333;
+	line-height: 180%;
+}
+#content .comment_list dl .comment_date{
+	color: #999;
+}
+
+#content .comment_list .comment_publish textarea{
+	width: 98%;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	padding: 5px;
+
+}
+#content .comment_list .comment_publish input{
+	border:none;
+	margin: 5px 0;
+	
+	height: 28px;
+	background: #369;
+	color: #fff;
+	cursor: pointer;
+}
+.load_more{
+	width: 96%;
+	color: #666;
+
+}
+
+
